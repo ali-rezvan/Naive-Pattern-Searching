@@ -1,1 +1,55 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<p></p>
+<p>Enter an string and click OK:</p>
+        txt  <input id="id1" >
+        <br><br>
+        
+        pat  <input id="id2" >
+        <button onclick="naiveSearch()">OK</button>
+
+<script>
+
+naiveSearch(txt,pat); //1
+function naiveSearch(txt,pat){
+    //var pat = document.getElementById("id1").value;
+    //var pat ="lo";
+    //var txt="Hello world";
+    var txt=document.getElementById("id1").value;
+    var pat=document.getElementById("id2").value;
+    document.write(txt);
+    document.write("<br>");
+    
+    
+    //document.write(txt);
+    //document.write(pat);
+    var M = pat.length; 
+	var N = txt.length; 
+    for(var i = 0; i <= N-M; i++){
+        var j;
+    
+        for(j = 0; j < M; j++){
+          if(txt[i+j] != pat[j])
+            break;
+            if(j == M );
+           
+            
+            document.writeln("Pattern found at index");
+            document.write(i);
+            document.write("<br>");
+            //alert(i);
+        }
+    }
+    
+}
+//var txt="Hello world";
+//var pat="lo";
+
+</script>
+
+</body>
+</html> 
 
