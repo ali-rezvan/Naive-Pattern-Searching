@@ -32,7 +32,14 @@ function naiveSearch(txt,pat){
     //var txt="Hello world";
     var txt=document.getElementById("id1").value;
     var pat=document.getElementById("id2").value;
-    document.write("<div style=' background-image: linear-gradient(#b3d9ff, blue);'>");
+    //document.write("<div style=' background-image: linear-gradient(#b3d9ff, blue);'>");
+    document.write("
+<style>
+body {
+  background-image: linear-gradient(#b3d9ff, blue);
+}
+</style>
+		   ");
     document.write("<div style=' color: black; min-height: 10px; padding: 1px; text-align: center;'>");
     document.write(txt);
     document.write("<br>");
