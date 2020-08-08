@@ -2,7 +2,7 @@
 <head>
 <style>
 body {
-  background-image: linear-gradient(#b3d9ff, white);
+  background-image: linear-gradient(#b3d9ff, blue);
 }
 </style>
 </head>
@@ -17,10 +17,10 @@ body {
 	
 	
 	<p>Enter an string and click OK:</p>
-        txt  <input id="id1" >
+        txt  <input id="id1" size="50" >
         <br><br>
         
-        pat  <input id="id2" >
+        pat  <input id="id2" size="50" >
         <button onclick="naiveSearch()">OK</button>
 
 <script>
@@ -32,6 +32,8 @@ function naiveSearch(txt,pat){
     //var txt="Hello world";
     var txt=document.getElementById("id1").value;
     var pat=document.getElementById("id2").value;
+    document.write("<div style=' background-image: linear-gradient(#b3d9ff, blue);'>");
+    document.write("<div style=' color: black; min-height: 10px; padding: 1px; text-align: center;'>");
     document.write(txt);
     document.write("<br>");
     
@@ -47,6 +49,7 @@ function naiveSearch(txt,pat){
           if(txt[i+j] != pat[j])
             break;
             if(j == M );
+            document.write("<div style=' color: #fff; min-height: 10px; padding: 1px; text-align: center;'>");
            
             
             document.writeln("Pattern found at index");
